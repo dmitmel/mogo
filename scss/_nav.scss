@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  margin-bottom: $nav_margin-bottom;
+  margin-bottom: $nav_padding-bottom;
   align-items: baseline;
   font-family: 'Montserrat', sans-serif;
 
@@ -15,11 +15,11 @@
     text-decoration: none;
     text-transform: uppercase;
 
-    transition: color $nav__link_transition;
+    transition: color $button_color-transition;
 
     &:hover,
     &:focus {
-      color: $nav__link_hover_color;
+      color: $yellow;
 
       &:after {
         width: 100%;
@@ -32,9 +32,9 @@
       width: 0;
       height: $nav__link_underline-height;
       margin-top: $nav__link_underline-margin-top;
-      background-color: $nav__link_hover_color;
+      background-color: $yellow;
 
-      transition: width $nav__link_transition;
+      transition: width $button_color-transition;
     }
 
     &_icon-search {

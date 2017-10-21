@@ -1,18 +1,25 @@
+$yellow: #fce38a;
+
 $title_font-size: 1.875em;
 $subtitle_font-size: 1.5em;
 $hr_width: 62px;
 
+$button_color-transition: 0.2s ease-in-out;
+
 $header_padding-top: 28px;
-$header_padding-bottom: 320px;
-$header__desc_padding-bottom: 70px;
-$header__title_font-size: $title_font-size * 5;
+$header_padding-bottom: 230px;
 $header__subtitle_font-size: $subtitle_font-size * 3;
 $header__subtitle_margin-bottom: 42px;
+$header__title_font-size: $title_font-size * 5;
+$header__desc_margin-bottom: 70px;
 
-$nav_margin-bottom: 143px;
+$learn-more_margin-top: 48px;
+$learn-more_padding-y: 10px;
+$learn-more_padding-x: 30px;
+$learn-more_border-width: 4px;
+
+$nav_padding-bottom: 143px;
 $nav__link_interval: 55px;
-$nav__link_hover_color: #fce38a;
-$nav__link_transition: 0.2s ease-in-out;
 $nav__link_underline-height: 4px;
 $nav__link_underline-margin-top: 7px;
 $nav__link_icon_interval: 40px;

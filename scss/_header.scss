@@ -6,7 +6,7 @@
   color: white;
 
   &__desc {
-    margin-bottom: $header__desc_padding-bottom;
+    margin-bottom: $header__desc_margin-bottom;
     text-align: center;
 
     .subtitle,
@@ -22,5 +22,30 @@
     .title {
       font-size: $header__title_font-size;
     }
+  }
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: $learn-more_margin-top;
+  padding: $learn-more_padding-y $learn-more_padding-x;
+  border: $learn-more_border-width solid white;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition: color $button_color-transition,
+    border-color $button_color-transition;
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $yellow;
+    color: $yellow;
   }
 }
