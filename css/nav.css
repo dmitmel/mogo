@@ -4,11 +4,37 @@
   align-items: center;
 }
 
-.nav__item {
-  margin-left: 55px;
-}
-
 .nav__brand {
   margin: 0;
   margin-right: auto;
+}
+
+.nav__link {
+  margin-left: 55px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition: color 0.2s ease-in-out;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: #fce38a;
+}
+
+.nav__link:after {
+  display: block;
+  content: '';
+  width: 0;
+  height: 4px;
+  margin-top: 7px;
+  background: #fce38a;
+
+  transition: width 0.2s ease-in-out;
+}
+
+.nav__link:hover:after,
+.nav__link:focus:after {
+  width: 100%;
 }
