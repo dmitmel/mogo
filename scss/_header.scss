@@ -1,0 +1,26 @@
+.header {
+  padding-top: $header_padding-top;
+  padding-bottom: $header_padding-bottom;
+  background: url(../img/header-bg.png) center top no-repeat;
+  background-size: cover;
+  color: white;
+
+  &__desc {
+    margin-bottom: $header__desc_padding-bottom;
+    text-align: center;
+
+    .subtitle,
+    .title {
+      margin: 0;
+    }
+
+    .subtitle {
+      margin-bottom: $header__subtitle_margin-bottom;
+      font-size: $header__subtitle_font-size;
+    }
+
+    .title {
+      font-size: $header__title_font-size;
+    }
+  }
+}
