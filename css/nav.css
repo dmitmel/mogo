@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  padding: 28px 0;
+  align-items: center;
+}
+
+.nav__item {
+  margin-left: 55px;
+}
+
+.nav__brand {
+  margin: 0;
+  margin-right: auto;
+}
