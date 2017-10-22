@@ -1,0 +1,41 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.section {
+  text-align: center;
+  padding: 90px 0;
+
+  &__title,
+  &__subtitle {
+    margin: 0;
+    line-height: 0.93;
+  }
+
+  &__subtitle {
+    margin-bottom: $section__subtitle_margin-bottom;
+    font-family: 'Kaushan Script', cursive;
+    font-size: $section__subtitle_font-size;
+  }
+
+  &__title {
+    margin-bottom: $section__title_margin-bottom;
+    font-family: 'Montserrat', cursive;
+    font-size: $section__title_font-size;
+    text-transform: uppercase;
+  }
+
+  &__line {
+    width: $section__line_width;
+    margin: 0 auto;
+    margin-bottom: $section__line_margin-bottom;
+    border: ($section__line_height / 2) solid $red;
+  }
+
+  &__content {
+    margin: 0;
+    color: $gray;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+  }
+}

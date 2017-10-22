@@ -1,20 +1,24 @@
+$gray: #999;
 $red: #f38181;
 $yellow: #fce38a;
 
-$title_font-size: 1.875em;
-$subtitle_font-size: 1.5em;
-$hr_width: 62px;
-
 $button_color-transition: 0.2s ease-in-out;
+
+$section__title_font-size: 1.875em;
+$section__title_margin-bottom: 35px;
+$section__subtitle_font-size: 1.5em;
+$section__subtitle_margin-bottom: 20px;
+$section__line_width: 62px;
+$section__line_height: 5px;
+$section__line_margin-bottom: 48px;
 
 $header_padding-top: 28px;
 $header_padding-bottom: 230px;
-$header__subtitle_font-size: $subtitle_font-size * 3;
-$header__subtitle_margin-bottom: 42px;
-$header__title_font-size: $title_font-size * 5;
-$header__desc_margin-bottom: 70px;
+$header__subtitle_font-size: $section__subtitle_font-size * 3;
+$header__subtitle_margin-bottom: $section__subtitle_margin-bottom * 2;
+$header__title_font-size: $section__title_font-size * 5;
+$header__desc_margin-bottom: $section__title_margin-bottom * 2;
 
-$learn-more_margin-top: 48px;
 $learn-more_padding-y: 10px;
 $learn-more_padding-x: 30px;
 $learn-more_border-width: 4px;

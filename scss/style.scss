@@ -1,4 +1,8 @@
 @import '_variables';
-@import '_typography';
 @import '_header';
 @import '_nav';
+@import '_section';
+
+html {
+  font-family: 'Roboto', sans-serif;
+}

@@ -9,29 +9,27 @@
     background: linear-gradient(to bottom, rgba($red, 0.9), rgba($yellow, 0.9));
   }
 
-  &__desc {
+  .section {
     margin-bottom: $header__desc_margin-bottom;
-    text-align: center;
+    padding: 0;
 
-    .subtitle,
-    .title {
-      margin: 0;
-    }
-
-    .subtitle {
+    &__subtitle {
       margin-bottom: $header__subtitle_margin-bottom;
       font-size: $header__subtitle_font-size;
     }
 
-    .title {
+    &__title {
       font-size: $header__title_font-size;
+    }
+
+    &__line {
+      border-color: white;
     }
   }
 }
 
 .learn-more {
   display: inline-block;
-  margin-top: $learn-more_margin-top;
   padding: $learn-more_padding-y $learn-more_padding-x;
   border: $learn-more_border-width solid white;
   color: white;
@@ -42,10 +40,6 @@
 
   transition: color $button_color-transition,
     border-color $button_color-transition;
-
-  &__wrapper {
-    text-align: center;
-  }
 
   &:hover,
   &:focus {
