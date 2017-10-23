@@ -1,0 +1,30 @@
+.return-to-top {
+  display: none;
+  width: $return-to-top_size;
+  height: $return-to-top_size;
+  position: fixed;
+  bottom: $return-to-top_offset;
+  right: $return-to-top_offset;
+  background: black;
+  border-radius: 100%;
+  transition: opacity $button_transition;
+  color: white;
+  font-size: 19px;
+  text-decoration: none;
+
+  &_visible {
+    display: block;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .fa {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+  }
+}
