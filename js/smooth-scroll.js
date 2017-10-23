@@ -1,7 +1,7 @@
 createModule('SmoothScroll', function(SmoothScroll) {
   var scrollRoot = $('html, body');
   SmoothScroll.scroll = function(top) {
-    scrollRoot.animate({ scrollTop: top }, 1000);
+    scrollRoot.animate({ scrollTop: top }, 1000, 'easeInOutSine');
   };
 
   SmoothScroll.init = function(link) {
