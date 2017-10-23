@@ -1,9 +1,12 @@
 $gray: #999;
 $red: #f38181;
 $yellow: #fce38a;
+$green: #95e1d3;
+$red-to-yellow: linear-gradient(to bottom, rgba($red, 0.9), rgba($yellow, 0.9));
 
 $button_color-transition: 0.2s ease-in-out;
 
+$section_padding-y: 90px;
 $section__title_font-size: 1.875em;
 $section__title_margin-bottom: 35px;
 $section__subtitle_font-size: 1.5em;
@@ -11,6 +14,12 @@ $section__subtitle_margin-bottom: 20px;
 $section__line_width: 62px;
 $section__line_height: 5px;
 $section__line_margin-bottom: 48px;
+$section__content_interval: 90px;
+
+$img-hoverable_transition: 0.3s ease-in-out;
+$img-hoverable__overlay_hover_offset: -10px;
+$img-hoverable__caption_font-size: 1.125em;
+$img-hoverable__icon_size: 30px;
 
 $header_padding-top: 28px;
 $header_padding-bottom: 230px;

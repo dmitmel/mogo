@@ -1,12 +1,12 @@
 .header {
-  background: url(../img/header-bg.png) center top no-repeat;
+  background: url(../img/header.jpg) center top no-repeat;
   background-size: cover;
   color: white;
 
   &__overlay {
     padding-top: $header_padding-top;
     padding-bottom: $header_padding-bottom;
-    background: linear-gradient(to bottom, rgba($red, 0.9), rgba($yellow, 0.9));
+    background: $red-to-yellow;
   }
 
   .section {

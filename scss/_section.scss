@@ -4,7 +4,7 @@ html {
 
 .section {
   text-align: center;
-  padding: 90px 0;
+  padding: $section_padding-y 0;
 
   &__title,
   &__subtitle {
@@ -34,8 +34,13 @@ html {
 
   &__content {
     margin: 0;
+    margin-bottom: $section__content_interval;
     color: $gray;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
