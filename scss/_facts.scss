@@ -1,0 +1,40 @@
+#facts {
+  padding: 0;
+  background: $green;
+
+  .section {
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.fact {
+  padding: $fact_padding-y 0;
+  flex: 1 0;
+  border-left: $fact_border;
+
+  &:last-child {
+    border-right: $fact_border;
+  }
+
+  &__number,
+  &__text {
+    margin: 0;
+  }
+
+  &__number {
+    margin-bottom: $fact__number_margin-bottom;
+    font-size: $fact__number_font-size;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: $fact__text_font-size;
+  }
+}
