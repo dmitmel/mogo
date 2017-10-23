@@ -1,20 +1,24 @@
 createModule('ReturnToTop', function() {
   var SmoothScroll = require('SmoothScroll');
 
-  var minScroll = $('#about').offset().top;
   var $window = $(window);
   var $returnToTop = $('.return-to-top');
-  var visibleClass = 'return-to-top_visible';
+
+  var MIN_SCROLL = $('#about').offset().top;
+  var VISIBLE_CLASS = 'return-to-top_visible';
 
   $window.scroll(function() {
-    if ($window.scrollTop() >= minScroll) {
-      $returnToTop.addClass(visibleClass);
+    if ($window.scrollTop() >= MIN_SCROLL) {
+      $returnToTop.addClass(VISIBLE_CLASS);
     } else {
-      $returnToTop.removeClass(visibleClass);
+      $returnToTop.removeClass(VISIBLE_CLASS);
     }
   });
 
-  $returnToTop.click(function() {
-    SmoothScroll.scroll(0);
+  var HEADER_OFFSET = $('#header').offset().top;
+
+  $returnToTop.click(function(e) {
+    e.preventDefault();
+    SmoothScroll.scroll(HEADER_OFFSET);
   });
 });

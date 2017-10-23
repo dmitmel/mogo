@@ -7,14 +7,15 @@
   right: $return-to-top_offset;
   background: black;
   border-radius: 100%;
-  transition: opacity $button_transition;
   color: white;
-  font-size: 19px;
+  text-align: center;
   text-decoration: none;
+
+  transition: opacity $button_transition;
 
   &_visible {
     display: block;
-    opacity: 0.5;
+    opacity: 0.65;
 
     &:hover {
       opacity: 1;
@@ -22,9 +23,8 @@
   }
 
   .fa {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -65%);
+    font-size: 1.25em;
+    line-height: $return-to-top_size;
+    transform: translateY(-3%);
   }
 }
