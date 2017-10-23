@@ -40,8 +40,7 @@
 
   transition: color $button_transition, border-color $button_transition;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: $yellow;
     color: $yellow;
   }

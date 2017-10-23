@@ -17,8 +17,7 @@
 
     transition: color $button_transition;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: $yellow;
 
       &:after {
