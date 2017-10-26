@@ -1,7 +1,21 @@
 .service {
+  display: flex;
   text-align: initial;
 
+  &__icon {
+    display: block;
+    width: $service__icon_width;
+    color: $green;
+    font-size: $service__icon_font-size;
+    text-align: center;
+  }
+
+  & > &__text-wrapper {
+    flex: 1;
+  }
+
   &__title {
+    margin-top: 0;
     color: black;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
