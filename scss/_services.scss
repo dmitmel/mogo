@@ -25,6 +25,10 @@
     color: $green;
     font-size: $service__icon_font-size;
     text-align: center;
+
+    .fa {
+      vertical-align: text-top;
+    }
   }
 
   & > &__text-wrapper {
