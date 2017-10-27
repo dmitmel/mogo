@@ -1,16 +1,13 @@
 #facts {
-  padding: 0;
   background: $green;
+  text-align: center;
 
-  .section {
-    &__content {
-      display: flex;
-      justify-content: space-between;
-      color: white;
-      font-family: 'Montserrat', sans-serif;
-      line-height: 1;
-      text-transform: uppercase;
-    }
+  &__wrapper {
+    display: flex;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+    text-transform: uppercase;
   }
 }
 
