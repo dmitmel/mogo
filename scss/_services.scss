@@ -1,6 +1,23 @@
+#services {
+  .row:not(:last-child) .service__col {
+    border-bottom: $service_border;
+  }
+
+  @media screen and (max-width: 767px) {
+    .service__col:not(:last-child) {
+      border-bottom: $service_border;
+    }
+  }
+}
+
 .service {
   display: flex;
   text-align: initial;
+
+  &__col {
+    padding-top: $service__col_padding-top;
+    padding-bottom: $service__col_padding-bottom;
+  }
 
   &__icon {
     display: block;
