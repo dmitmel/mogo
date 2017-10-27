@@ -14,12 +14,12 @@ $section__subtitle_margin-bottom: 20px;
 $section__line_width: 62px;
 $section__line_height: 5px;
 $section__line_margin-bottom: 48px;
-$section__content_interval: 90px;
+$section__content_margin-bottom: 90px;
 
 $img-hoverable_transition: 0.3s ease-in-out;
 $img-hoverable__overlay_hover_offset: -10px;
 $img-hoverable__caption_font-size: 1.125em;
-$img-hoverable__icon_size: 30px;
+$img-hoverable__icon_size: 1.675em;
 
 $return-to-top_offset: 20px;
 $return-to-top_size: 50px;
@@ -42,7 +42,7 @@ $nav__link_underline-margin-top: 7px;
 $nav__link_icon_interval: 40px;
 
 $fact_padding-y: 60px;
-$fact_border: 1px solid rgba(255, 255, 255, 0.3);
+$fact_border: 1px solid rgba(white, 0.3);
 $fact__number_margin-bottom: 20px;
 $fact__number_font-size: 4.5em;
 $fact__text_font-size: 0.875em;
