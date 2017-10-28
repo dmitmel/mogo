@@ -1,0 +1,12 @@
+#brands {
+  background: lighten($gray, 37.25%);
+  padding: $section_sub_padding-y 0;
+}
+
+.brand {
+  transition: transform $img-hoverable_transition;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
