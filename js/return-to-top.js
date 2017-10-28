@@ -2,7 +2,7 @@ createModule('ReturnToTop', function() {
   var SmoothScroll = require('SmoothScroll');
 
   var $window = $(window);
-  var returnToTop = $('.return-to-top');
+  var returnToTop = $('#return-to-top');
 
   var MIN_SCROLL = $('#about').offset().top;
   var VISIBLE_CLASS = 'return-to-top_visible';
