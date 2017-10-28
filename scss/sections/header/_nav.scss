@@ -36,9 +36,9 @@
 
       transition: width $button_transition;
     }
-
-    &_icon-search {
-      margin-left: $nav__link_icon_interval;
-    }
   }
+}
+
+#nav__link_icon-search {
+  margin-left: $nav__link_icon_interval;
 }
