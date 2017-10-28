@@ -1,4 +1,10 @@
+#guys {
+  padding-bottom: $section_padding-y - $guy__margin-bottom;
+}
+
 .guy {
+  margin-bottom: $guy__margin-bottom;
+
   &__links {
     display: flex;
     justify-content: center;
