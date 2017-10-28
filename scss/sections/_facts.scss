@@ -14,6 +14,7 @@
 .fact {
   padding: $fact_padding-y 0;
   flex: 1 0;
+  $fact_border: 1px solid rgba(white, 0.3);
   border-left: $fact_border;
 
   &:last-child {

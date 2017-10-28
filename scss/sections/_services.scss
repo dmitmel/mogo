@@ -1,4 +1,6 @@
 #services {
+  $service_border: 1px solid #e5e5e5;
+
   .row:not(:last-child) {
     border-bottom: $service_border;
   }
