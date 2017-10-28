@@ -1,0 +1,19 @@
+{
+  "name": "mogo",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitmel/mogo.git"
+  },
+  "keywords": [],
+  "author": "dmitmel <dmytro.meleshko@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmitmel/mogo/issues"
+  },
+  "homepage": "https://github.com/dmitmel/mogo#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2"
+  }
+}

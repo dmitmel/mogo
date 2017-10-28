@@ -15,15 +15,15 @@
       }
     }
 
-    @include guy__link_size(60px);
-
-    @media screen and (max-width: 991px) {
+    @include media-breakpoint-down(lg) {
       @include guy__link_size(45px);
     }
 
-    @media screen and (max-width: 767px) {
+    @include media-breakpoint-down(md) {
       @include guy__link_size(60px);
     }
+
+    @include guy__link_size(60px);
 
     background: $yellow;
     color: $red;
