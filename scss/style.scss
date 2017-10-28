@@ -6,7 +6,13 @@
 @import 'nav';
 @import 'facts';
 @import 'services';
+@import 'design';
 
 html {
   font-family: 'Roboto', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
 }

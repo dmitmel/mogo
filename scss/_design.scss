@@ -1,0 +1,17 @@
+#design {
+  margin-bottom: $design__mobile_bottom;
+  padding-bottom: 0;
+  background: url(../img/design/bg.jpg) center no-repeat / cover;
+
+  &__devices {
+    position: relative;
+    text-align: center;
+  }
+
+  &__mobile {
+    margin-left: $design__mobile_margin-left;
+    position: absolute;
+    bottom: -$design__mobile_bottom;
+    left: 50%;
+  }
+}
