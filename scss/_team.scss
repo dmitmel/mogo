@@ -1,0 +1,40 @@
+.guy {
+  &__links {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    width: 60px;
+    height: 60px;
+    background: $yellow;
+    color: $red;
+    line-height: 60px;
+    vertical-align: bottom;
+
+    &:not(:last-child) {
+      border-right: 1px solid $red;
+    }
+
+    &:hover {
+      background: $red;
+      color: white;
+    }
+
+    .fa {
+      vertical-align: sub;
+    }
+  }
+
+  &__name {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  &__desc {
+    font-style: italic;
+    font-weight: 100;
+  }
+}
