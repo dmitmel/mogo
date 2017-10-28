@@ -1,7 +1,11 @@
 createModule('SmoothScroll', function(SmoothScroll) {
+  $.easing.easeInOut = function(t) {
+    return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+  };
+
   var scrollRoot = $('html, body');
   SmoothScroll.scroll = function(top, callback) {
-    scrollRoot.animate({ scrollTop: top }, 1000, 'easeInOutSine', callback);
+    scrollRoot.animate({ scrollTop: top }, 1000, 'easeInOut', callback);
   };
 
   SmoothScroll.init = function(link) {
