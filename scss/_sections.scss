@@ -1,7 +1,3 @@
-html {
-  font-family: 'Roboto', sans-serif;
-}
-
 .section {
   text-align: center;
   padding: $section_padding-y 0;
@@ -33,13 +29,17 @@ html {
   }
 
   &__content {
-    margin: 0;
-    margin-bottom: $section__content_margin-bottom;
+    &:not(:last-child) {
+      margin-bottom: $section__content_margin-bottom;
+    }
+
     color: $gray;
     line-height: 1.6;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 }
+
+@import 'sections/header';
+@import 'sections/facts';
+@import 'sections/services';
+@import 'sections/design';
+@import 'sections/team';
