@@ -5,12 +5,28 @@
   }
 
   &__link {
-    width: 60px;
-    height: 60px;
+    @mixin guy__link_size($size) {
+      width: $size;
+      height: $size;
+      line-height: $size;
+
+      .fa {
+        font-size: $size * 0.5;
+      }
+    }
+
+    @include guy__link_size(60px);
+
+    @media screen and (max-width: 991px) {
+      @include guy__link_size(45px);
+    }
+
+    @media screen and (max-width: 767px) {
+      @include guy__link_size(60px);
+    }
+
     background: $yellow;
     color: $red;
-    line-height: 60px;
-    vertical-align: bottom;
 
     &:not(:last-child) {
       border-right: 1px solid $red;
