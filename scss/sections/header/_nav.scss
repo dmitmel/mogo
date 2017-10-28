@@ -2,6 +2,7 @@
   display: flex;
   margin-bottom: $nav_padding-bottom;
   align-items: baseline;
+  overflow: auto;
   font-family: 'Montserrat', sans-serif;
 
   &__brand {
