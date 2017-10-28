@@ -27,11 +27,25 @@
 
   &__number {
     margin-bottom: $fact__number_margin-bottom;
+
     font-size: $fact__number_font-size;
+
+    @include media-breakpoint-down(md) {
+      font-size: $fact__number_font-size * 0.7;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: $fact__number_font-size * 0.5;
+    }
+
     font-weight: bold;
   }
 
   &__text {
     font-size: $fact__text_font-size;
+
+    @include media-breakpoint-down(lg) {
+      font-size: $fact__text_font-size * 0.8;
+    }
   }
 }
