@@ -70,7 +70,7 @@ gulp.task('styles:watch', ['styles:build'], function() {
 
 gulp.task('js:build', function(done) {
   function compile(entry) {
-    return browserify(entry)
+    return browserify({ entries: [entry], debug: true })
       .transform('babelify', { presets: ['es2015'] })
       .bundle()
       .on('error', done)
@@ -81,7 +81,7 @@ gulp.task('js:build', function(done) {
       .pipe(uglify())
       .pipe(
         sourcemaps.write('.', {
-          sourceRoot: path.relative(paths.dist.js, paths.src.js)
+          sourceRoot: path.relative(paths.dist.js, __dirname)
         })
       )
       .pipe(gulp.dest(paths.dist.js));
