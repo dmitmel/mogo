@@ -45,7 +45,7 @@ gulp.task('styles:build', function() {
   return gulp
     .src(_p(paths.src.styles, '**', '[^_]*.scss'))
     .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({ includePaths: 'node_modules' }).on('error', sass.logError))
     .pipe(autoprefixer({ browsers }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cleanCSS())

@@ -21,12 +21,8 @@
       }
     }
 
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-between(md, md) {
       @include guy__link_size(45px);
-    }
-
-    @include media-breakpoint-down(md) {
-      @include guy__link_size(60px);
     }
 
     @include guy__link_size(60px);
