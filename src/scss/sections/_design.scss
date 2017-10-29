@@ -1,6 +1,7 @@
 #design {
   padding-bottom: 0;
-  background: url(../../assets/img/design/bg.jpg) center no-repeat / cover;
+  background: url(../../assets/img/design/bg.jpg) center no-repeat;
+  background-size: cover;
 
   &__devices {
     position: relative;

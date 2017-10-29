@@ -1,7 +1,8 @@
 @import './header/nav';
 
 #header {
-  background: url(../../assets/img/header.jpg) center no-repeat / cover;
+  background: url(../../assets/img/header.jpg) center no-repeat;
+  background-size: cover;
   color: white;
 
   &__overlay {
