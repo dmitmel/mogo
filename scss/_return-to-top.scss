@@ -13,7 +13,7 @@
 
   transition: opacity $button_transition, bottom $button_transition;
 
-  &_visible {
+  &.return-to-top_visible {
     bottom: $return-to-top_offset;
 
     &:hover {
