@@ -19,7 +19,9 @@ export function init(link) {
 }
 
 $.fn.SmoothScroll = function() {
-  this.each(() => init(this));
+  this.each(function() {
+    init(this);
+  });
 };
 
 $('a[href^="#"]')
