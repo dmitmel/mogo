@@ -4,6 +4,9 @@ env:
 globals:
   createModule: true
   require: true
+parserOptions:
+  ecmaVersion: 6
+  sourceType: module
 extends: 'eslint:recommended'
 rules:
   indent:
@@ -48,14 +51,12 @@ rules:
   no-multi-spaces: warn
   no-new-wrappers: warn
   no-redeclare: error
-  no-return-assign:
-    - error
-    - always
   no-self-assign:
     - error
     - props: true
   no-self-compare: error
   no-throw-literal: error
+  no-unexpected-multiline: off
   no-unused-expressions: warn
   no-unused-labels: warn
   no-useless-concat: warn
