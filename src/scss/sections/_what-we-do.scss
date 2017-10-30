@@ -14,25 +14,45 @@
 
   .accordion-item {
     &__toggle {
-      .fa {
-        width: 1em;
-        margin-right: $what-we-do__icon_margin-right;
-        color: $green;
-        font-size: $what-we-do__icon_size;
-        text-align: center;
-        vertical-align: middle;
-      }
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon,
+    &__state-icon {
+      width: 1em;
+      text-align: center;
+    }
+
+    &__icon {
+      margin-right: $what-we-do__icon_margin-right;
+      color: $green;
+      font-size: $what-we-do__icon_size;
+    }
+
+    &__state-icon {
+      margin-left: auto;
+      color: $gray-300;
+      font-size: $what-we-do__state-icon_size;
+
+      transition: transform $expansion_transition;
     }
 
     &__content-wrapper {
       font-style: italic;
     }
 
-    &_expanded .accordion-item__content-wrapper {
-      height: 147px;
+    &_expanded {
+      .accordion-item__state-icon {
+        transform: rotate(180deg);
+      }
 
-      @include media-breakpoint-between(lg, lg) {
-        height: 87px;
+      .accordion-item__content-wrapper {
+        height: 147px;
+
+        @include media-breakpoint-between(lg, lg) {
+          height: 87px;
+        }
       }
     }
   }

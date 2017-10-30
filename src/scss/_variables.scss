@@ -1,7 +1,8 @@
-$gray: #999;
-$darker-gray: darken($gray, 20%);
-$lighter-gray: lighten($gray, 29.75%);
-$light-gray: lighten($gray, 37.25%);
+$gray-400: #999;
+$gray-100: lighten($gray-400, 37.25%);
+$gray-200: lighten($gray-400, 29.75%);
+$gray-300: lighten($gray-400, 20%);
+$gray-500: darken($gray-400, 20%);
 $red: #f38181;
 $yellow: #fce38a;
 $green: #95e1d3;
@@ -31,7 +32,8 @@ $return-to-top_offset: 20px;
 $return-to-top_size: 50px;
 
 $accordion-item_interval: 8px;
-$accordion-item__toggle_padding: 15px;
+$accordion-item__toggle_padding-x: 20px;
+$accordion-item__toggle_padding-y: 15px;
 $accordion-item__content_padding: 15px;
 
 $header_padding-top: 28px;
@@ -57,7 +59,7 @@ $fact__number_margin-bottom: 20px;
 $fact__number_font-size: 4.5em;
 $fact__text_font-size: 0.875em;
 
-$service_border: 1px solid $lighter-gray;
+$service_border: 1px solid $gray-200;
 $service__col_padding-bottom: 1em;
 $service__col_padding-top: $service__col_padding-bottom + 1em;
 $service__icon_width: 2.5em;
@@ -71,4 +73,5 @@ $guy_border-right: 1px solid $red;
 
 $what-we-do__item_margin-bottom: 28px;
 $what-we-do__icon_size: 2.0625em;
-$what-we-do__icon_margin-right: 10px;
+$what-we-do__icon_margin-right: $accordion-item__toggle_padding-y;
+$what-we-do__state-icon_size: 1.5em;

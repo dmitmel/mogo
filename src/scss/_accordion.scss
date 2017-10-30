@@ -5,7 +5,7 @@
 }
 
 .accordion-item {
-  $accordion_border: 1px solid $lighter-gray;
+  $accordion_border: 1px solid $gray-200;
   border: $accordion_border;
 
   &:not(:last-child) {
@@ -14,13 +14,13 @@
 
   &__toggle {
     display: block;
-    padding: $accordion-item__toggle_padding;
+    padding: $accordion-item__toggle_padding-y $accordion-item__toggle_padding-x;
     color: initial;
 
     transition: color $color_transition;
 
     &:hover {
-      color: $darker-gray;
+      color: $gray-500;
     }
   }
 
