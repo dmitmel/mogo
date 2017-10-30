@@ -28,10 +28,10 @@
     }
 
     &_expanded .accordion-item__content-wrapper {
-      height: 172px;
+      height: 147px;
 
       @include media-breakpoint-between(lg, lg) {
-        height: 112px;
+        height: 87px;
       }
     }
   }
