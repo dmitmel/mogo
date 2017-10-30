@@ -13,6 +13,16 @@
   }
 
   .accordion-item {
+    &__toggle {
+      .fa {
+        width: 1em;
+        margin-right: $what-we-do__icon_margin-right;
+        font-size: $what-we-do__icon_size;
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+
     &__content-wrapper {
       font-style: italic;
     }
