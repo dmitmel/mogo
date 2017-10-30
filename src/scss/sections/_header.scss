@@ -54,7 +54,7 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  transition: color $button_transition, border-color $button_transition;
+  transition: color $color_transition, border-color $color_transition;
 
   &:hover {
     border-color: $yellow;

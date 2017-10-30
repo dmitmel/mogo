@@ -1,0 +1,28 @@
+#what-we-do {
+  padding-bottom: $section_padding-y - 28px;
+
+  &__img,
+  .accordion {
+    margin-bottom: 28px;
+  }
+
+  .accordion {
+    max-width: 570px;
+    margin: 0 auto;
+    text-align: initial;
+  }
+
+  .accordion-item {
+    &__content-wrapper {
+      font-style: italic;
+    }
+
+    &_expanded .accordion-item__content-wrapper {
+      height: 172px;
+
+      @include media-breakpoint-between(lg, lg) {
+        height: 112px;
+      }
+    }
+  }
+}

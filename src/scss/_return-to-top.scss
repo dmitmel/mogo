@@ -11,7 +11,7 @@
   text-align: center;
   text-decoration: none;
 
-  transition: opacity $button_transition, bottom $button_transition;
+  transition: opacity $color_transition, bottom $color_transition;
 
   &.return-to-top_visible {
     bottom: $return-to-top_offset;

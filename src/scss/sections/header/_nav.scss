@@ -16,7 +16,7 @@
     text-decoration: none;
     text-transform: uppercase;
 
-    transition: color $button_transition;
+    transition: color $color_transition;
 
     &:hover {
       color: $yellow;
@@ -34,7 +34,7 @@
       margin-top: $nav__link_underline-margin-top;
       background-color: $yellow;
 
-      transition: width $button_transition;
+      transition: width $color_transition;
     }
   }
 }

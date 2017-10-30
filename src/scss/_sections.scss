@@ -34,7 +34,7 @@
     }
 
     color: $gray;
-    line-height: 1.6;
+    line-height: $section__content_line-height;
   }
 }
 
@@ -42,5 +42,6 @@
 @import './sections/facts';
 @import './sections/services';
 @import './sections/design';
+@import './sections/what-we-do';
 @import './sections/team';
 @import './sections/brands';

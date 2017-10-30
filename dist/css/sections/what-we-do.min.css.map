@@ -1,0 +1,1 @@
+{"version":3,"sources":["what-we-do.css"],"names":[],"mappings":"AAAA,8BACE,WAAA","file":"what-we-do.min.css","sourcesContent":["#what-we-do .section__content {\n  text-align: initial; }\n"],"sourceRoot":"../../../src/scss"}

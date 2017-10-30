@@ -11,7 +11,7 @@
     position: relative;
     top: 0;
     left: 0;
-    transition: top $img-hoverable_transition, left $img-hoverable_transition;
+    transition: top $expansion_transition, left $expansion_transition;
 
     &:hover {
       top: $img-hoverable__overlay_hover_offset;
@@ -36,7 +36,7 @@
     &:before,
     .img-hoverable__caption {
       opacity: 0;
-      transition: opacity $img-hoverable_transition;
+      transition: opacity $expansion_transition;
     }
   }
 

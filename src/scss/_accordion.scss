@@ -1,0 +1,41 @@
+.accordion {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordion-item {
+  border: $accordion_border-width solid #e5e5e5;
+
+  &:not(:last-child) {
+    margin-bottom: $accordion-item_interval;
+  }
+
+  &__toggle {
+    display: block;
+    padding: $accordion-item__toggle_padding;
+    color: initial;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: color $color_transition;
+
+    &:hover {
+      color: darken($gray, 20%);
+    }
+  }
+
+  &__content-wrapper {
+    height: 0;
+    border-top: $accordion_border-width solid #e5e5e5;
+    overflow: auto;
+
+    transition: height $expansion_transition;
+  }
+
+  &__content {
+    margin: ($accordion-item__content_padding / $section__content_line-height)
+      $accordion-item__content_padding;
+  }
+}

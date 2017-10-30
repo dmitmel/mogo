@@ -4,7 +4,8 @@ $yellow: #fce38a;
 $green: #95e1d3;
 $red-to-yellow: linear-gradient(to bottom, rgba($red, 0.9), rgba($yellow, 0.9));
 
-$button_transition: 0.2s ease-in-out;
+$color_transition: 0.2s ease-in-out;
+$expansion_transition: 0.3s ease-in-out;
 
 $section_padding-y: 90px;
 $section_sub_padding-y: 48px;
@@ -16,14 +17,19 @@ $section__line_width: 62px;
 $section__line_height: 5px;
 $section__line_margin-bottom: 48px;
 $section__content_margin-bottom: 90px;
+$section__content_line-height: 1.6;
 
-$img-hoverable_transition: 0.3s ease-in-out;
 $img-hoverable__overlay_hover_offset: -10px;
 $img-hoverable__caption_font-size: 1.125em;
 $img-hoverable__icon_size: 1.675em;
 
 $return-to-top_offset: 20px;
 $return-to-top_size: 50px;
+
+$accordion_border-width: 1px;
+$accordion-item_interval: 8px;
+$accordion-item__toggle_padding: 15px;
+$accordion-item__content_padding: 15px;
 
 $header_padding-top: 28px;
 $header_padding-bottom: 230px;
