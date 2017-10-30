@@ -1,9 +1,9 @@
 #team {
-  padding-bottom: $section_padding-y - $guy__margin-bottom;
+  padding-bottom: $section_padding-y - $guy_margin-bottom;
 }
 
 .guy {
-  margin-bottom: $guy__margin-bottom;
+  margin-bottom: $guy_margin-bottom;
 
   &__links {
     display: flex;
@@ -31,7 +31,7 @@
     color: $red;
 
     &:not(:last-child) {
-      border-right: 1px solid $red;
+      border-right: $guy_border-right;
     }
 
     &:hover {
@@ -52,6 +52,5 @@
 
   &__desc {
     font-style: italic;
-    font-weight: 300;
   }
 }

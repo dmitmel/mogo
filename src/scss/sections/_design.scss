@@ -1,11 +1,9 @@
 #design {
   padding-bottom: 0;
-  background: url(../../assets/img/design/bg.jpg) center no-repeat;
-  background-size: cover;
+  @include background-image('../../assets/img/design/bg.jpg');
 
   &__devices {
     position: relative;
-    text-align: center;
   }
 
   &__mobile {

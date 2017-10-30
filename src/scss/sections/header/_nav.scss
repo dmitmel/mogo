@@ -1,20 +1,19 @@
 .nav {
   display: flex;
   margin-bottom: $nav_padding-bottom;
+  // align items by the baseline of text
   align-items: baseline;
+  // make nav scrollable on small screens
   overflow: auto;
-  font-family: 'Montserrat', sans-serif;
 
   &__brand {
     margin: 0;
     margin-right: auto;
+    text-transform: none;
   }
 
   &__link {
     margin-left: $nav__link_interval;
-    color: inherit;
-    text-decoration: none;
-    text-transform: uppercase;
 
     transition: color $color_transition;
 
@@ -26,6 +25,7 @@
       }
     }
 
+    // add underline for links
     &:after {
       display: block;
       content: '';

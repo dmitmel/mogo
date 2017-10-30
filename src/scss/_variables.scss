@@ -1,4 +1,7 @@
 $gray: #999;
+$darker-gray: darken($gray, 20%);
+$lighter-gray: lighten($gray, 29.75%);
+$light-gray: lighten($gray, 37.25%);
 $red: #f38181;
 $yellow: #fce38a;
 $green: #95e1d3;
@@ -10,6 +13,7 @@ $expansion_transition: 0.3s ease-in-out;
 $section_padding-y: 90px;
 $section_sub_padding-y: 48px;
 $section__title_font-size: 1.875em;
+$section__title_line-height: 0.93;
 $section__title_margin-bottom: 35px;
 $section__subtitle_font-size: 1.5em;
 $section__subtitle_margin-bottom: 20px;
@@ -26,7 +30,6 @@ $img-hoverable__icon_size: 1.675em;
 $return-to-top_offset: 20px;
 $return-to-top_size: 50px;
 
-$accordion_border-width: 1px;
 $accordion-item_interval: 8px;
 $accordion-item__toggle_padding: 15px;
 $accordion-item__content_padding: 15px;
@@ -49,10 +52,12 @@ $nav__link_underline-margin-top: 7px;
 $nav__link_icon_interval: 40px;
 
 $fact_padding-y: 60px;
+$fact_border: 1px solid rgba(white, 0.3);
 $fact__number_margin-bottom: 20px;
 $fact__number_font-size: 4.5em;
 $fact__text_font-size: 0.875em;
 
+$service_border: 1px solid $lighter-gray;
 $service__col_padding-bottom: 1em;
 $service__col_padding-top: $service__col_padding-bottom + 1em;
 $service__icon_width: 2.5em;
@@ -61,6 +66,7 @@ $service__icon_font-size: 2em;
 $design__mobile_margin-left: 140px;
 $design__mobile_bottom: 60px;
 
-$guy__margin-bottom: 45px;
+$guy_margin-bottom: 45px;
+$guy_border-right: 1px solid $red;
 
 $what-we-do__item_margin-bottom: 28px;

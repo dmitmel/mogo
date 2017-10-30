@@ -1,11 +1,9 @@
 #services {
-  $service_border: 1px solid #e5e5e5;
-
   .row:not(:last-child) {
     border-bottom: $service_border;
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     .service__col:not(:last-child) {
       border-bottom: $service_border;
     }
@@ -40,7 +38,6 @@
   &__title {
     margin-top: 0;
     color: initial;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
+    font-weight: normal;
   }
 }

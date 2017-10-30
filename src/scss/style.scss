@@ -2,7 +2,9 @@
 @import 'bootstrap/scss/variables';
 @import 'bootstrap/scss/mixins/breakpoints';
 
+@import './mixins';
 @import './variables';
+
 @import './img-hoverable';
 @import './return-to-top';
 @import './sections';
@@ -15,4 +17,15 @@ html {
 img {
   max-width: 100%;
   vertical-align: middle;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+// selector is wrapped in a string to keep formatter from expanding it
+#{'a, h1, h2, h3, h4, h5, h6'} {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
 }

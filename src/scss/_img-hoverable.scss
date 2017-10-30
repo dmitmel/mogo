@@ -46,11 +46,7 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    text-align: center;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
     font-size: $img-hoverable__caption_font-size;
-    text-transform: uppercase;
 
     .fa {
       font-size: $img-hoverable__icon_size;

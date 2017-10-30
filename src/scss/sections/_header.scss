@@ -1,8 +1,7 @@
 @import './header/nav';
 
 #header {
-  background: url(../../assets/img/header.jpg) center no-repeat;
-  background-size: cover;
+  @include background-image('../../assets/img/header.jpg');
   color: white;
 
   &__overlay {
@@ -48,11 +47,7 @@
   display: inline-block;
   padding: $learn-more_padding-y $learn-more_padding-x;
   border: $learn-more_border-width solid white;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
   text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
 
   transition: color $color_transition, border-color $color_transition;
 

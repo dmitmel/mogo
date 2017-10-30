@@ -5,7 +5,8 @@
 }
 
 .accordion-item {
-  border: $accordion_border-width solid #e5e5e5;
+  $accordion_border: 1px solid $lighter-gray;
+  border: $accordion_border;
 
   &:not(:last-child) {
     margin-bottom: $accordion-item_interval;
@@ -15,20 +16,17 @@
     display: block;
     padding: $accordion-item__toggle_padding;
     color: initial;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
 
     transition: color $color_transition;
 
     &:hover {
-      color: darken($gray, 20%);
+      color: $darker-gray;
     }
   }
 
   &__content-wrapper {
     height: 0;
-    border-top: $accordion_border-width solid #e5e5e5;
+    border-top: $accordion_border;
     overflow: auto;
 
     transition: height $expansion_transition;
