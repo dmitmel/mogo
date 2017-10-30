@@ -1,15 +1,15 @@
 #what-we-do {
-  padding-bottom: $section_padding-y - 28px;
-
-  &__img,
-  .accordion {
-    margin-bottom: 28px;
-  }
+  padding-bottom: $section_padding-y - $what-we-do__item_margin-bottom;
 
   .accordion {
     max-width: 570px;
     margin: 0 auto;
     text-align: initial;
+  }
+
+  &__img,
+  .accordion {
+    margin-bottom: $what-we-do__item_margin-bottom;
   }
 
   .accordion-item {
