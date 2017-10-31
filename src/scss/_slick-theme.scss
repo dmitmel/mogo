@@ -1,0 +1,29 @@
+.slick-prev,
+.slick-next {
+  display: block;
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: none;
+  background: none;
+  color: $carousel__button_color;
+  font-size: $carousel__button_font-size;
+  line-height: 1;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    color: $carousel__button_hover_color;
+  }
+}
+
+.slick-prev {
+  left: -$carousel__button_offset;
+}
+
+.slick-next {
+  right: -$carousel__button_offset;
+}

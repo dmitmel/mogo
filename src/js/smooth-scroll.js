@@ -24,6 +24,8 @@ $.fn.SmoothScroll = function() {
   });
 };
 
-$('a[href^="#"]')
-  .not('[href="#"]')
-  .SmoothScroll();
+$(() =>
+  $('a[href^="#"]')
+    .not('[href="#"]')
+    .SmoothScroll()
+);

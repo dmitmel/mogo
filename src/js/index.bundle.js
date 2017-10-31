@@ -5,3 +5,4 @@ $.easing.easeInOut = function(t) {
 import './smooth-scroll';
 import './return-to-top';
 import './accordion';
+import './carousel';

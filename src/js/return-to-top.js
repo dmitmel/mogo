@@ -1,24 +1,27 @@
 import { scrollTo } from './smooth-scroll';
 
-var $window = $(window);
-var returnToTop = $('#return-to-top');
+var RETURN_TO_TOP_VISIBLE = 'return-to-top_visible';
 
-var MIN_SCROLL = $('#about').offset().top;
-var VISIBLE_CLASS = 'return-to-top_visible';
+$(() => {
+  const MIN_SCROLL = $('#about').offset().top;
 
-$window.scroll(function() {
-  if ($window.scrollTop() >= MIN_SCROLL) {
-    returnToTop.addClass(VISIBLE_CLASS);
-  } else {
-    returnToTop.removeClass(VISIBLE_CLASS);
-  }
-});
+  const returnToTop = $('#return-to-top');
 
-var header = $('#header');
-returnToTop.click(function(e) {
-  e.preventDefault();
-  var headerOffset = header.offset().top;
-  scrollTo(headerOffset, function() {
-    window.location.hash = '#';
+  const $window = $(window);
+  $window.scroll(function() {
+    if ($window.scrollTop() >= MIN_SCROLL) {
+      returnToTop.addClass(RETURN_TO_TOP_VISIBLE);
+    } else {
+      returnToTop.removeClass(RETURN_TO_TOP_VISIBLE);
+    }
+  });
+
+  const header = $('#header');
+  returnToTop.click(function(e) {
+    e.preventDefault();
+    var headerOffset = header.offset().top;
+    scrollTo(headerOffset, function() {
+      window.location.hash = '#';
+    });
   });
 });
