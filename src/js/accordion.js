@@ -16,22 +16,27 @@ export class Accordion {
 
   _addItem(element) {
     element = $(element);
-    this.items.push(element);
+    let toggle = element.find(ITEM_TOGGLE_SELECTOR);
+    let item = { element, toggle };
+    this.items.push(item);
 
-    element.find(ITEM_TOGGLE_SELECTOR).click(e => {
+    toggle.click(e => {
       e.preventDefault();
-      this._expandItem(element);
+      this._expandItem(item);
     });
   }
 
   _expandItem(item) {
-    if (item.hasClass(ITEM_EXPANDED)) return;
+    if (item.element.hasClass(ITEM_EXPANDED)) return;
 
     this.items.forEach(otherItem => {
-      otherItem.removeClass(ITEM_EXPANDED);
+      if (!otherItem.element.hasClass(ITEM_EXPANDED)) return;
+      otherItem.element.removeClass(ITEM_EXPANDED);
+      otherItem.toggle.attr('aria-expanded', 'false');
     });
 
-    item.addClass(ITEM_EXPANDED);
+    item.element.addClass(ITEM_EXPANDED);
+    item.toggle.attr('aria-expanded', 'true');
   }
 }
 
