@@ -13,6 +13,10 @@
     "url": "https://github.com/dmitmel/mogo/issues"
   },
   "homepage": "https://github.com/dmitmel/mogo#readme",
+  "scripts": {
+    "start": "gulp serve",
+    "build": "gulp build"
+  },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2"
   },

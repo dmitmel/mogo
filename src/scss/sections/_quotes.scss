@@ -1,0 +1,53 @@
+#quotes1 {
+  background: $gray-100;
+  padding: $section_sub_padding-y 0;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  font-size: $quote_font-size;
+  line-height: $section__content_line-height;
+  user-select: initial;
+
+  &__icon {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    margin-right: $quote__icon_margin-right;
+    padding: $quote__icon_padding;
+    border: $quote__icon_border;
+    color: $quote__icon_color;
+    font-size: $quote__icon_size;
+    text-align: center;
+
+    .fa {
+      vertical-align: super;
+    }
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__text {
+    margin-top: 0;
+    color: $gray-400;
+    font-style: italic;
+  }
+
+  &__footer {
+    font-family: 'Kaushan Script', cursive;
+
+    &:before {
+      content: '\2e3a'; // two-em dash
+      margin-right: $quote__dash_margin-right;
+      color: $quote__dash_color;
+      font-weight: bold;
+    }
+  }
+
+  &__cite {
+    font-style: normal;
+  }
+}

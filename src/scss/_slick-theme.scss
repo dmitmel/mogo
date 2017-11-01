@@ -2,11 +2,10 @@
 .slick-next {
   display: block;
   width: 1em;
-  height: 1em;
   padding: 0;
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translateY(-50%);
   border: none;
   background: none;
   color: $carousel__button_color;
