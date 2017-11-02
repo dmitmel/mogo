@@ -20,14 +20,14 @@
     &:hover {
       color: $yellow;
 
-      &:after {
+      &::after {
         width: 100%;
         margin-left: 0;
       }
     }
 
     // add underline for links
-    &:after {
+    &::after {
       display: block;
       content: '';
       width: 0;

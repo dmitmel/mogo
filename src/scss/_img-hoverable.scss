@@ -17,13 +17,13 @@
       top: $img-hoverable__overlay_hover_offset;
       left: $img-hoverable__overlay_hover_offset;
 
-      &:before,
+      &::before,
       .img-hoverable__caption {
         opacity: 1;
       }
     }
 
-    &_gradient:before {
+    &_gradient::before {
       content: '';
       width: 100%;
       height: 100%;
@@ -33,7 +33,7 @@
       background: $red-to-yellow;
     }
 
-    &:before,
+    &::before,
     .img-hoverable__caption {
       opacity: 0;
       transition: opacity $expansion_transition;

@@ -2,7 +2,7 @@
 
 #header {
   @include background-image('../../assets/img/header.jpg');
-  color: white;
+  color: #fff;
 
   &__overlay {
     padding-top: $header_padding-top;
@@ -38,7 +38,7 @@
     }
 
     &__line {
-      border-color: white;
+      border-color: #fff;
     }
   }
 }
@@ -46,7 +46,7 @@
 #learn-more {
   display: inline-block;
   padding: $learn-more_padding-y $learn-more_padding-x;
-  border: $learn-more_border-width solid white;
+  border: $learn-more_border-width solid #fff;
   text-align: center;
 
   transition: color $color_transition, border-color $color_transition;

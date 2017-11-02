@@ -1,6 +1,6 @@
 #facts {
   background: $green;
-  color: white;
+  color: #fff;
   font-family: 'Montserrat', sans-serif;
   line-height: 1;
   text-align: center;
@@ -39,7 +39,7 @@
       font-size: $fact__number_font-size * 0.5;
     }
 
-    font-weight: bold;
+    font-weight: 700;
   }
 
   &__text {

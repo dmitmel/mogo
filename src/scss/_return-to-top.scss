@@ -5,9 +5,9 @@
   bottom: -$return-to-top_size - $return-to-top_offset;
   right: $return-to-top_offset;
   opacity: 0.65;
-  background: black;
+  background: #000;
   border-radius: 100%;
-  color: white;
+  color: #fff;
   text-align: center;
 
   transition: opacity $color_transition, bottom $color_transition;

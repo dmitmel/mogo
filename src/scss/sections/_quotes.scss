@@ -39,11 +39,11 @@
   &__footer {
     font-family: 'Kaushan Script', cursive;
 
-    &:before {
+    &::before {
       content: '\2e3a'; // two-em dash
       margin-right: $quote__dash_margin-right;
       color: $quote__dash_color;
-      font-weight: bold;
+      font-weight: 700;
     }
   }
 

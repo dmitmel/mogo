@@ -33,7 +33,9 @@
   }
 
   &__content {
-    margin: ($accordion-item__content_padding / $section__content_line-height)
+    // prettier-ignore
+    margin:
+      ($accordion-item__content_padding / $section__content_line-height)
       $accordion-item__content_padding;
   }
 }
