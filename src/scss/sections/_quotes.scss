@@ -10,6 +10,14 @@
   line-height: $section__content_line-height;
   user-select: initial;
 
+  @include media-breakpoint-down(lg) {
+    font-size: $quote_font-size * 0.9;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: $quote_font-size * 0.7;
+  }
+
   &__icon {
     box-sizing: content-box;
     width: 1em;

@@ -81,9 +81,9 @@ $what-we-do__icon_size: 2.0625em;
 $what-we-do__icon_margin-right: $accordion-item__toggle_padding-y;
 $what-we-do__state-icon_size: 1.5em;
 
-$quote_font-size: 24px;
-$quote__icon_margin-right: 60px;
-$quote__icon_padding: 40px;
+$quote_font-size: 1.5em;
+$quote__icon_margin-right: 0.83em; // 60px / $quote__icon_size
+$quote__icon_padding: 0.55em; // 40px / $quote__icon_size
 $quote__icon_color: $green;
 $quote__icon_border: 3px solid $quote__icon_color;
 $quote__icon_size: 3em;
