@@ -1,9 +1,9 @@
 #team {
-  padding-bottom: $section_padding-y - $guy_margin-bottom;
+  padding-bottom: $section_padding-y - $team-member_margin-bottom;
 }
 
-.guy {
-  margin-bottom: $guy_margin-bottom;
+.team-member {
+  margin-bottom: $team-member_margin-bottom;
 
   &__links {
     display: flex;
@@ -11,7 +11,7 @@
   }
 
   &__link {
-    @mixin guy__link_size($size) {
+    @mixin team-member__link_size($size) {
       width: $size;
       height: $size;
       line-height: $size;
@@ -22,16 +22,16 @@
     }
 
     @include media-breakpoint-only(md) {
-      @include guy__link_size(45px);
+      @include team-member__link_size(45px);
     }
 
-    @include guy__link_size(60px);
+    @include team-member__link_size(60px);
 
     background: $yellow;
     color: $red;
 
     &:not(:last-child) {
-      border-right: $guy_border-right;
+      border-right: $team-member_border-right;
     }
 
     &:hover {
