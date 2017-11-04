@@ -4,9 +4,26 @@
 
   &__devices {
     position: relative;
+
+    @include media-breakpoint-down(md) {
+      font-size: 0.9em;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 0.68em;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 1.9vw;
+    }
+  }
+
+  &__tablet {
+    width: $design__tablet_width;
   }
 
   &__mobile {
+    width: $design__mobile_width;
     margin-left: $design__mobile_margin-left;
     position: absolute;
     bottom: -$design__mobile_bottom;
