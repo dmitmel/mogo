@@ -1,0 +1,49 @@
+#clients {
+  padding: 0;
+  @include background-image('../../assets/img/clients/bg.jpg');
+
+  &__overlay {
+    padding: $section_padding-y 0;
+    background: $clients__overlay_color;
+  }
+}
+
+.client {
+  display: flex;
+  align-items: flex-start;
+  text-align: initial;
+
+  &__img {
+    margin-right: $clients__img_margin-right;
+
+    @include media-breakpoint-down(sm) {
+      margin-right: $clients__img_margin-right / 2;
+    }
+  }
+
+  &__text-wrapper {
+    flex: 1;
+  }
+
+  &__name,
+  &__info {
+    line-height: 1;
+  }
+
+  &__name {
+    margin-top: 0;
+    color: initial;
+    font-weight: 400;
+  }
+
+  &__info {
+    color: $gray-600;
+    font-style: italic;
+  }
+
+  &__line {
+    width: $section__line_width;
+    margin: $clients__line_margin-y 0;
+    border: ($clients__line_height / 2) solid $red;
+  }
+}

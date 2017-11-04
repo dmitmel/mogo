@@ -1,5 +1,3 @@
-@import './header/nav';
-
 #header {
   @include background-image('../../assets/img/header.jpg');
   color: #fff;

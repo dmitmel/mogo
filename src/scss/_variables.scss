@@ -3,6 +3,7 @@ $gray-100: lighten($gray-400, 37.25%);
 $gray-200: lighten($gray-400, 29.75%);
 $gray-300: lighten($gray-400, 20%);
 $gray-500: darken($gray-400, 20%);
+$gray-600: darken($gray-400, 40%);
 $red: #f38181;
 $yellow: #fce38a;
 $green: #95e1d3;
@@ -91,3 +92,8 @@ $quote__icon_border: 3px solid $quote__icon_color;
 $quote__icon_size: 3em;
 $quote__dash_margin-right: 5px;
 $quote__dash_color: $red;
+
+$clients__overlay_color: rgba(#fff, 0.85);
+$clients__img_margin-right: 30px;
+$clients__line_margin-y: 1.5em;
+$clients__line_height: 3px;
