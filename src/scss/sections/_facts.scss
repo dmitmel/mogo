@@ -14,7 +14,7 @@
 .fact {
   padding: $fact_padding-y 0;
   // same width for all facts
-  flex: 1 0;
+  flex: 1;
   border-left: $fact_border;
 
   &:last-child {
