@@ -18,16 +18,28 @@
     font-size: $quote_font-size * 0.7;
   }
 
+  @include media-breakpoint-down(xs) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   &__icon {
     box-sizing: content-box;
     width: 1em;
     height: 1em;
-    margin-right: $quote__icon_margin-right;
     padding: $quote__icon_padding;
     border: $quote__icon_border;
     color: $quote__icon_color;
     font-size: $quote__icon_size;
     text-align: center;
+
+    @include media-breakpoint-up(xs) {
+      margin-right: $quote__icon_margin;
+    }
+
+    @include media-breakpoint-down(xs) {
+      margin-bottom: $quote__icon_margin;
+    }
 
     .fa {
       vertical-align: super;
@@ -36,6 +48,10 @@
 
   &__content {
     flex: 1;
+
+    @include media-breakpoint-down(xs) {
+      flex: 0 0 100%;
+    }
   }
 
   &__text {
