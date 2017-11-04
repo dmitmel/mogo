@@ -4,20 +4,22 @@
 
   &__overlay {
     padding: $section_padding-y 0;
-    background: $clients__overlay_color;
+    background: $client__overlay_color;
   }
 }
 
 .client {
   display: flex;
+  padding-top: $client_padding-y;
+  padding-bottom: $client_padding-y;
   align-items: flex-start;
   text-align: initial;
 
   &__img {
-    margin-right: $clients__img_margin-right;
+    margin-right: $client__img_margin-right;
 
     @include media-breakpoint-down(sm) {
-      margin-right: $clients__img_margin-right / 2;
+      margin-right: $client__img_margin-right / 2;
     }
   }
 
@@ -43,7 +45,7 @@
 
   &__line {
     width: $section__line_width;
-    margin: $clients__line_margin-y 0;
-    border: ($clients__line_height / 2) solid $red;
+    margin: $client__line_margin-y 0;
+    border: ($client__line_height / 2) solid $red;
   }
 }
