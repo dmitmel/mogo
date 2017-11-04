@@ -33,7 +33,7 @@
     font-size: $quote__icon_size;
     text-align: center;
 
-    @include media-breakpoint-up(xs) {
+    @include media-breakpoint-up(sm) {
       margin-right: $quote__icon_margin;
     }
 
@@ -50,7 +50,7 @@
     flex: 1;
 
     @include media-breakpoint-down(xs) {
-      flex: 0 0 100%;
+      flex-basis: 100%;
     }
   }
 
