@@ -12,16 +12,16 @@
 .work {
   &__col {
     // 4 columns
-    flex: 0 0 25%;
+    flex: 25%;
 
     @include media-breakpoint-down(md) {
       // 2 columns
-      flex: 0 0 50%;
+      flex: 50%;
     }
 
     @include media-breakpoint-down(xs) {
       // 1 column
-      flex: 0 0 100%;
+      flex: 100%;
     }
   }
 
