@@ -50,7 +50,7 @@
       .accordion-item__content-wrapper {
         height: 147px;
 
-        @include media-breakpoint-between(lg, lg) {
+        @include media-breakpoint-only(lg) {
           height: 87px;
         }
       }

@@ -21,7 +21,7 @@
       }
     }
 
-    @include media-breakpoint-between(md, md) {
+    @include media-breakpoint-only(md) {
       @include guy__link_size(45px);
     }
 
