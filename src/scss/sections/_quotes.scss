@@ -3,6 +3,10 @@
   padding: $section_sub_padding-y 0;
 }
 
+#quotes2 {
+  padding-bottom: $section_sub_padding-y;
+}
+
 .quote {
   display: flex;
   align-items: center;
@@ -23,15 +27,9 @@
     justify-content: center;
   }
 
-  &__icon {
-    box-sizing: content-box;
-    width: 1em;
-    height: 1em;
-    padding: $quote__icon_padding;
-    border: $quote__icon_border;
-    color: $quote__icon_color;
+  &__icon,
+  &__pic {
     font-size: $quote__icon_size;
-    text-align: center;
 
     @include media-breakpoint-up(sm) {
       margin-right: $quote__icon_margin;
@@ -40,6 +38,16 @@
     @include media-breakpoint-down(xs) {
       margin-bottom: $quote__icon_margin;
     }
+  }
+
+  &__icon {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: $quote__icon_padding;
+    border: $quote__icon_border;
+    color: $quote__icon_color;
+    text-align: center;
 
     .fa {
       vertical-align: super;
