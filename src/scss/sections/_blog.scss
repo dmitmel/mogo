@@ -31,12 +31,20 @@
 
   &__month {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
     font-style: italic;
+    text-transform: none;
   }
 
   &__title {
     color: initial;
     font-weight: 400;
+
+    transition: color $color_transition;
+  }
+
+  &__link:hover &__title {
+    color: $red;
   }
 
   &__line {
