@@ -36,7 +36,24 @@
 
   &__title {
     color: initial;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  &__line {
+    color: $gray-200;
+  }
+
+  &__views,
+  &__comments {
+    display: inline-block;
+    font-style: italic;
+
+    .fa {
+      color: $green;
+    }
+  }
+
+  &__comments {
+    margin-left: $blog-article__comments_margin-left;
   }
 }
