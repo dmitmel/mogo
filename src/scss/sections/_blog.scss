@@ -7,6 +7,10 @@
     position: relative;
   }
 
+  &__img {
+    width: 100%;
+  }
+
   &__caption {
     padding: $blog-article__caption_padding;
     position: absolute;
