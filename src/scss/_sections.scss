@@ -36,7 +36,7 @@
       margin-bottom: $section__content_margin-bottom;
     }
 
-    color: $gray-400;
+    color: $section__content_color;
     line-height: $section__content_line-height;
   }
 }
@@ -55,3 +55,4 @@
 @import './sections/clients';
 @import './sections/blog';
 @import './sections/map';
+@import './sections/footer';

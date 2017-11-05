@@ -1,4 +1,4 @@
-.nav {
+#nav {
   display: flex;
   margin-bottom: $nav_padding-bottom;
   // align items by the baseline of text
@@ -11,36 +11,36 @@
     margin-right: auto;
     text-transform: none;
   }
+}
 
-  &__link {
-    margin-left: $nav__link_interval;
+.nav__link {
+  margin-left: $nav__link_spacing;
 
-    transition: color $color_transition;
+  transition: color $color_transition;
 
-    &:hover {
-      color: $yellow;
+  &:hover {
+    color: $yellow;
 
-      &::after {
-        width: 100%;
-        margin-left: 0;
-      }
-    }
-
-    // add underline for links
     &::after {
-      display: block;
-      content: '';
-      width: 0;
-      height: $nav__link_underline-height;
-      margin-top: $nav__link_underline-margin-top;
-      margin-left: auto;
-      background-color: $yellow;
-
-      transition: width $color_transition, margin-left $color_transition;
+      width: 100%;
+      margin-left: 0;
     }
+  }
+
+  // add underline for links
+  &::after {
+    display: block;
+    content: '';
+    width: 0;
+    height: $nav__link_underline-height;
+    margin-top: $nav__link_underline-margin-top;
+    margin-left: auto;
+    background-color: $yellow;
+
+    transition: width $color_transition, margin-left $color_transition;
   }
 }
 
 #nav__link_icon-search {
-  margin-left: $nav__link_icon_interval;
+  margin-left: $nav__link_icon_spacing;
 }

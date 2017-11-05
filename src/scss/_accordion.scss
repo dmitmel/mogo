@@ -9,7 +9,7 @@
   border: $accordion_border;
 
   &:not(:last-child) {
-    margin-bottom: $accordion-item_interval;
+    margin-bottom: $accordion-item_spacing;
   }
 
   &__toggle {

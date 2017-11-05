@@ -23,7 +23,8 @@ $section__line_width: 62px;
 $section__line_height: 5px;
 $section__line_margin-bottom: 48px;
 $section__content_margin-bottom: 90px;
-$section__content_line-height: 1.6;
+$section__content_line-height: 1.5;
+$section__content_color: $gray-400;
 
 $img-hoverable__overlay_hover_offset: -10px;
 $img-hoverable__caption_font-size: 1.125em;
@@ -32,7 +33,7 @@ $img-hoverable__icon_size: 1.675em;
 $return-to-top_offset: 20px;
 $return-to-top_size: 50px;
 
-$accordion-item_interval: 8px;
+$accordion-item_spacing: 8px;
 $accordion-item__toggle_padding-x: 20px;
 $accordion-item__toggle_padding-y: 15px;
 $accordion-item__content_padding: 15px;
@@ -49,15 +50,15 @@ $header__subtitle_margin-bottom: $section__subtitle_margin-bottom * 2;
 $header__title_font-size: $section__title_font-size * 5;
 $header__desc_margin-bottom: $section__title_margin-bottom * 2;
 
-$learn-more_padding-y: 10px;
-$learn-more_padding-x: 30px;
-$learn-more_border-width: 4px;
+$btn_padding-y: 10px;
+$btn_padding-x: 30px;
+$btn_border-width: 4px;
 
 $nav_padding-bottom: 143px;
-$nav__link_interval: 55px;
+$nav__link_spacing: 55px;
 $nav__link_underline-height: 4px;
 $nav__link_underline-margin-top: 7px;
-$nav__link_icon_interval: 40px;
+$nav__link_icon_spacing: 40px;
 
 $fact_padding-y: 60px;
 $fact_border: 1px solid rgba(#fff, 0.3);
@@ -107,3 +108,23 @@ $blog-article__comments_margin-left: 0.75em;
 
 $map__marker_font-size: 2em;
 $map__frame_height: 70vh;
+
+$footer__section_spacing: 2.25em;
+$footer-about__brand_color: $gray-300;
+$footer-about__brand_font-size: 2.5em;
+$footer-copyright__margin-y: 1.375em;
+$footer-copyright__font-size: 0.875em;
+$footer-copyright__link_color: $red;
+$footer-copyright__link_hover_color: $section__content_color;
+$followers_color: $gray-600;
+$followers_font-size: 1.125em;
+$followers_font-size: 1.125em;
+$follow-us__label_margin-right: 15px;
+$follow-us__link_hover_color: $red;
+$subscribe__input_padding: 0.8125em;
+$subscribe__input_border: 1px solid $gray-200;
+$subscribe__input_placeholder-color: $gray-300;
+$subscribe__btn_background: $green;
+$subscribe__btn_color: #fff;
+$subscribe__btn_hover_background: $red;
+$subscribe__btn_hover_color: $yellow;
