@@ -7,6 +7,12 @@
 
   &__toggle {
     color: $red;
+
+    transition: color $color_transition;
+
+    &:hover {
+      color: initial;
+    }
   }
 
   &__marker {
