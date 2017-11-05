@@ -1,10 +1,8 @@
 #clients {
-  padding: 0;
   @include background-image('../../assets/img/clients/bg.jpg');
 
   &__overlay {
-    padding: $section_padding-y 0;
-    background: $client__overlay_color;
+    background: rgba($gray-100, 0.85);
   }
 }
 

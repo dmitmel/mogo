@@ -1,17 +1,9 @@
-#quotes1 {
-  background: $gray-100;
-  padding: $section_sub_padding-y 0;
-}
-
-#quotes2 {
-  padding: $section_padding-y 0;
-}
-
 .quote {
   display: flex;
   align-items: center;
   font-size: $quote_font-size;
   line-height: $section__content_line-height;
+  text-align: initial;
   user-select: initial;
 
   @include media-breakpoint-down(lg) {

@@ -2,6 +2,11 @@
   text-align: center;
   padding: $section_padding-y 0;
 
+  &_sub {
+    padding: $section_sub_padding-y 0;
+    background: $gray-100;
+  }
+
   &__title,
   &__subtitle {
     margin: 0;
@@ -49,3 +54,4 @@
 @import './sections/work';
 @import './sections/clients';
 @import './sections/blog';
+@import './sections/map';

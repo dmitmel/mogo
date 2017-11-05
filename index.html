@@ -124,9 +124,9 @@
       </section>
       <!-- /section#about -->
 
-      <section id="facts">
+      <section id="facts" class="section section_sub">
         <div class="container">
-          <div id="facts__wrapper">
+          <div id="facts__wrapper" class="section__content">
             <div class="fact">
               <p class="fact__number">42</p>
               <p class="fact__text">Web design projects</p>
@@ -240,19 +240,21 @@
       </section>
       <!-- /section#service -->
 
-      <section class="section" id="design">
-        <div class="container">
-          <p class="section__subtitle">For all devices</p>
-          <h2 class="section__title">Unique design</h2>
-          <hr class="section__line">
-          <div id="design__devices" class="section__content">
-            <img src="./assets/img/design/tablet.png" alt="Tablet" id="design__tablet">
-            <img src="./assets/img/design/mobile.png" alt="Mobule" id="design__mobile">
+      <section id="design">
+        <div id="design__overlay" class="section">
+          <div class="container">
+            <p class="section__subtitle">For all devices</p>
+            <h2 class="section__title">Unique design</h2>
+            <hr class="section__line">
+            <div id="design__devices" class="section__content">
+              <img src="./assets/img/design/tablet.png" alt="Tablet" id="design__tablet">
+              <img src="./assets/img/design/mobile.png" alt="Mobule" id="design__mobile">
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="what-we-do">
+      <section id="what-we-do" class="section">
         <div class="container">
           <p class="section__subtitle">Service</p>
           <h2 class="section__title">What we do</h2>
@@ -335,7 +337,7 @@
         <!-- /section#what-we-do -->
       </section>
 
-      <section id="quotes1">
+      <section id="quotes1" class="section section_sub">
         <div class="container">
           <div class="carousel">
             <div class="carousel__item">
@@ -381,7 +383,7 @@
       </section>
       <!-- /section#quotes1 -->
 
-      <section class="section" id="team">
+      <section id="team" class="section">
         <div class="container">
           <p class="section__subtitle">Who we are</p>
           <h2 class="section__title">Meet our team</h2>
@@ -479,7 +481,7 @@
       </section>
       <!-- /section#team -->
 
-      <section class="section" id="brands">
+      <section id="brands" class="section section_sub">
         <div class="container">
           <div class="section__content row">
             <div class="col-lg-2 col-sm-4 col-6">
@@ -551,7 +553,7 @@
       </section>
       <!-- /section#work -->
 
-      <section id="quotes2">
+      <section id="quotes2" class="section section_sub">
         <div class="container">
           <div class="carousel">
             <div class="carousel__item">
@@ -593,8 +595,8 @@
       </section>
       <!-- /section#quotes2 -->
 
-      <section class="section" id="clients">
-        <div id="clients__overlay">
+      <section id="clients">
+        <div id="clients__overlay" class="section">
           <div class="container">
             <p class="section__subtitle">Happy Clients</p>
             <h2 class="section__title">What people say</h2>
@@ -666,7 +668,7 @@
           <p class="section__subtitle">Our stories</p>
           <h2 class="section__title">Latest blog</h2>
           <hr class="section__line">
-          <div class="section__content row" id="blog-articles">
+          <div id="blog-articles" class="section__content row">
             <div class="blog-article col-md-4">
               <div class="blog-article__img-wrapper">
                 <img src="./assets/img/blog/1.jpg" alt="Blog 1" class="blog-article__img">
@@ -748,6 +750,25 @@
         <!-- /.container -->
       </section>
       <!-- /section#blogs -->
+
+      <section id="map">
+        <div id="map__overlay" class="section section_sub">
+          <div class="container">
+            <a href="#" id="map__toggle">
+              <p class="section__subtitle">
+                <i id="map__marker" class="fa fa-map-marker" aria-hidden="true"></i>
+              </p>
+              <h2 class="section__title">
+                <span id="map__open">Open map</span>
+                <span id="map__close">Close map</span>
+              </h2>
+            </a>
+            <hr class="section__line">
+            <iframe src="https://www.google.com/maps/embed/v1/view?zoom=10&center=50.4501%2C30.5234&key=AIzaSyDap-tzyt39DNcIaYtOm9X02Ns00xB-gsQ"
+              id="map__frame" class="section__content" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- /main -->
 

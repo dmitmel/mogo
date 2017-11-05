@@ -1,0 +1,41 @@
+#map {
+  @include background-image('../../assets/img/map-bg.jpg');
+
+  &__overlay {
+    background: rgba($gray-100, 0.85);
+  }
+
+  &__toggle {
+    color: $red;
+  }
+
+  &__marker {
+    font-size: $map__marker_font-size;
+  }
+
+  &:not(.map_visible) {
+    #map__close {
+      display: none;
+    }
+
+    .section__line {
+      margin-bottom: $section__line_margin-bottom / 2;
+    }
+
+    #map__frame {
+      display: none;
+    }
+  }
+
+  &.map_visible {
+    #map__open {
+      display: none;
+    }
+  }
+
+  &__frame {
+    width: 100%;
+    height: $map__frame_height;
+    border: none;
+  }
+}

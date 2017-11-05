@@ -1,6 +1,10 @@
 #design {
-  padding-bottom: 0;
   @include background-image('../../assets/img/design/bg.jpg');
+
+  &__overlay {
+    padding-bottom: 0;
+    background: rgba($gray-100, 0.85);
+  }
 
   &__devices {
     position: relative;

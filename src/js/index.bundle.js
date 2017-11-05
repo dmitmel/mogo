@@ -6,3 +6,4 @@ import './smooth-scroll';
 import './return-to-top';
 import './accordion';
 import './carousel';
+import './map';
