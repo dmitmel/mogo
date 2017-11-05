@@ -1,0 +1,38 @@
+.blog-article {
+  padding-top: $blog-article_padding-y;
+  padding-bottom: $blog-article_padding-y;
+  text-align: initial;
+
+  &__img-wrapper {
+    position: relative;
+  }
+
+  &__caption {
+    padding: $blog-article__caption_padding;
+    position: absolute;
+    left: -$blog-article__caption_offset;
+    bottom: $blog-article__caption_offset;
+    background: $green;
+    color: #fff;
+    line-height: 1;
+  }
+
+  &__date {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: $blog-article__date_font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__month {
+    margin: 0;
+    font-style: italic;
+  }
+
+  &__title {
+    color: initial;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+  }
+}
