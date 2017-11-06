@@ -6,7 +6,7 @@
     display: flex;
     color: #fff;
     line-height: 1;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-family-lg;
     text-transform: uppercase;
   }
 }
@@ -43,10 +43,10 @@
   }
 
   &__text {
-    font-size: $fact__text_font-size;
+    font-size: $fact__font-family-default-size;
 
     @include media-breakpoint-down(lg) {
-      font-size: $fact__text_font-size * 0.8;
+      font-size: $fact__font-family-default-size * 0.8;
     }
   }
 }

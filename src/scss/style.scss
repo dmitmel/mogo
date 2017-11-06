@@ -13,8 +13,9 @@
 @import './accordion';
 @import './slick-theme';
 
-html {
-  font-family: 'Roboto', sans-serif;
+html,
+body {
+  font-family: $font-family-default;
 }
 
 img {
@@ -29,7 +30,7 @@ a {
 
 // selector is wrapped in a string to keep formatter from expanding it
 #{'a, h1, h2, h3, h4, h5, h6'} {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-family-lg;
   text-transform: uppercase;
 }
 

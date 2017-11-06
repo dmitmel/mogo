@@ -61,7 +61,7 @@
   }
 
   &__footer {
-    font-family: 'Kaushan Script', cursive;
+    font-family: $font-family-cursive;
 
     &::before {
       content: '\2e3a'; // two-em dash

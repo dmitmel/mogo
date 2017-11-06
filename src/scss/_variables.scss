@@ -12,6 +12,10 @@ $red-to-yellow: linear-gradient(to bottom, rgba($red, 0.9), rgba($yellow, 0.9));
 $color_transition: 0.2s ease-in-out;
 $expansion_transition: 0.3s ease-in-out;
 
+$font-family-lg: 'Montserrat', sans-serif;
+$font-family-default: 'Roboto', sans-serif;
+$font-family-cursive: 'Kaushan Script', cursive;
+
 $section_padding-y: 90px;
 $section_sub_padding-y: 48px;
 $section__title_font-size: 1.875em;
@@ -64,7 +68,7 @@ $fact_padding-y: 60px;
 $fact_border: 1px solid rgba(#fff, 0.3);
 $fact__number_margin-bottom: 20px;
 $fact__number_font-size: 4.5em;
-$fact__text_font-size: 0.875em;
+$fact__font-family-default-size: 0.875em;
 
 $service_border: 1px solid $gray-200;
 $service__col_padding-bottom: 1em;

@@ -23,7 +23,7 @@
   &-copyright {
     margin: $footer-copyright__margin-y 0;
     color: initial;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-family-lg;
     font-size: $footer-copyright__font-size;
     text-align: center;
 
@@ -42,7 +42,7 @@
 
 #followers {
   color: $followers_color;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-family-lg;
   font-size: $followers_font-size;
 
   &__number {
@@ -95,7 +95,7 @@
     border: none;
     background: $subscribe__btn_background;
     color: $subscribe__btn_color;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-family-lg;
     text-transform: uppercase;
     font-weight: 700;
     cursor: pointer;
