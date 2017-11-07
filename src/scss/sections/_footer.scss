@@ -2,42 +2,23 @@
   padding-top: $section_sub_padding-y;
   color: $section__content_color;
   line-height: $section__content_line-height;
+}
 
-  &__content {
-    margin-bottom: $section_sub_padding-y * 1.5;
+#footer-about {
+  &__brand {
+    margin: 0;
+    color: $footer-about__brand_color;
+    font-size: $footer-about__brand_font-size;
+    text-transform: none;
   }
 
-  &-about {
-    &__brand {
-      margin: 0;
-      color: $footer-about__brand_color;
-      font-size: $footer-about__brand_font-size;
-      text-transform: none;
-    }
-
-    &__info {
-      margin-bottom: $footer__section_spacing;
-    }
+  &__info {
+    margin-bottom: $footer__section_spacing;
   }
+}
 
-  &-copyright {
-    margin: $footer-copyright__margin-y 0;
-    color: initial;
-    font-family: $font-family-lg;
-    font-size: $footer-copyright__font-size;
-    text-align: center;
-
-    a {
-      text-transform: none;
-      color: $footer-copyright__link_color;
-
-      transition: color $color_transition;
-
-      &:hover {
-        color: $footer-copyright__link_hover_color;
-      }
-    }
-  }
+.footer__col {
+  margin-bottom: $section_sub_padding-y * 1.5;
 }
 
 #followers {
@@ -105,6 +86,56 @@
     &:hover {
       background: $subscribe__btn_hover_background;
       color: $subscribe__btn_hover_color;
+    }
+  }
+}
+
+#footer-blogs {
+  &__title {
+    color: initial;
+  }
+}
+
+.footer-blog {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 2em;
+  }
+
+  &__img {
+    margin-right: 10px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 0.5em;
+    color: initial;
+  }
+
+  &__date {
+    margin: 0;
+    font-size: 0.83em;
+    font-style: italic;
+  }
+}
+
+#footer-copyright {
+  margin: $footer-copyright__margin-y 0;
+  color: initial;
+  font-family: $font-family-lg;
+  font-size: $footer-copyright__font-size;
+  text-align: center;
+
+  a {
+    text-transform: none;
+    color: $footer-copyright__link_color;
+
+    transition: color $color_transition;
+
+    &:hover {
+      color: $footer-copyright__link_hover_color;
     }
   }
 }
