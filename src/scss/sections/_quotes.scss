@@ -1,3 +1,9 @@
+#quotes1,
+#quotes2 {
+  padding-left: $quotes_padding-y;
+  padding-right: $quotes_padding-y;
+}
+
 .quote {
   display: flex;
   align-items: center;
