@@ -36,11 +36,33 @@
     text-transform: none;
   }
 
+  @mixin lines($lines: 1) {
+    height: 1em * $lines * $section__content_line-height;
+  }
+
   &__title {
+    @include media-breakpoint-up(lg) {
+      @include lines(1);
+    }
+
+    @include media-breakpoint-between(md, lg) {
+      @include lines(2);
+    }
+
     color: initial;
     font-weight: 400;
 
     transition: color $color_transition;
+  }
+
+  &__text {
+    @include media-breakpoint-up(lg) {
+      @include lines(3);
+    }
+
+    @include media-breakpoint-only(md) {
+      @include lines(4);
+    }
   }
 
   &__link:hover &__title {
