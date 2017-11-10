@@ -59,6 +59,7 @@
   display: flex;
 
   &__input {
+    min-width: 0;
     padding: $subscribe__input_padding;
     // stretch to full width
     flex: 1;
