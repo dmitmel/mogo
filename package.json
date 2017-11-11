@@ -24,6 +24,7 @@
     "babel-core": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babelify": "^8.0.0",
+    "browser-sync": "^2.18.13",
     "browserify": "^14.5.0",
     "event-stream": "^3.3.4",
     "globby": "^6.1.0",
@@ -37,7 +38,6 @@
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^4.3.11",
     "rimraf": "^2.6.2",
-    "through2": "^2.0.3",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }
