@@ -71,7 +71,16 @@ gulp.task('styles:watch', ['styles:build'], function() {
 gulp.task('js:build', function(done) {
   function compile(entry) {
     return browserify({ entries: [entry], debug: true })
-      .transform('babelify', { presets: ['es2015'] })
+      .transform('babelify', {
+        presets: [
+          [
+            '@babel/preset-env',
+            {
+              targets: '> 0.25%, not dead'
+            }
+          ]
+        ]
+      })
       .bundle()
       .on('error', done)
       .pipe(source(path.basename(entry)))
